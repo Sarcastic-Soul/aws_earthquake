@@ -1,17 +1,43 @@
-# React + Vite
+# 🌍 Code vs Tectonics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **A dashboard exploring the spurious correlation between software development velocity and global seismic activity.**
 
-Currently, two official plugins are available:
+Do AWS SDK commits trigger earthquakes? Probably not. But the data looks cool.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚡ Features
 
-## React Compiler
+  * **Live Data Correlation:** Overlays real-time GitHub commit history against USGS Earthquake data.
+  * **Dynamic Repo Selector:** Compare tectonic shifts against `aws/aws-sdk-js`, `facebook/react`, or any custom public repository.
+  * **The "Chaos Ratio":** Calculates a pseudo-scientific synchronization score between code pushes and tectonic plate movements.
+  * **Gruvbox Aesthetic:** A retro, eye-friendly, gradient-free design system.
+  * **Zero-Dependency Charts:** Custom SVG visualizations built from scratch (no Chart.js/Recharts).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+  * **Framework:** React (Vite)
+  * **Styling:** Tailwind CSS (Custom Gruvbox Theme)
+  * **Icons:** Lucide React
+  * **Utilities:** date-fns
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# aws_earthquake
+## 🚀 Quick Start
+
+1.  **Clone & Install**
+
+    ```bash
+    git clone https://github.com/Sarcastic-Soul/aws_earthquake.git
+    cd aws_earthquake
+    npm install
+    ```
+
+2.  **Run Locally**
+
+    ```bash
+    npm run dev
+    ```
+
+3.  **Explore**
+    Open `http://localhost:3000` and analyze the chaos.
+
+## ⚠️ Disclaimer
+
+This tool is for entertainment purposes only. Please do not use the "Synchronicity Score" for geological risk assessment or sprint planning.
