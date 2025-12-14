@@ -15,8 +15,13 @@ export const THEME = {
 };
 
 // Global CSS to force scrollbar styling and font smoothing
-export const GlobalStyles = () => (
-  <style>{`
+// Note: We use React.createElement here so this file can remain a standard .js file
+// without triggering JSX parsing errors in Vite.
+export const GlobalStyles = () => {
+  return React.createElement(
+    "style",
+    null,
+    `
     body {
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
@@ -28,5 +33,6 @@ export const GlobalStyles = () => (
     ::-webkit-scrollbar-thumb:hover { background: #928374; }
     /* Firefox Scrollbar */
     * { scrollbar-width: thin; scrollbar-color: ${THEME.scrollbarThumb} ${THEME.scrollbarTrack}; }
-  `}</style>
-);
+  `,
+  );
+};

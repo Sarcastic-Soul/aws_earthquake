@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown, Search, Github } from "lucide-react";
-import { THEME } from "../theme";
+import { THEME } from "../theme.js";
 
 const POPULAR_REPOS = [
   { name: "React", value: "facebook/react" },

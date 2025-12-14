@@ -1,6 +1,6 @@
 import React from "react";
 import { format } from "date-fns";
-import { THEME } from "../theme";
+import { THEME } from "../theme.js";
 
 const EventFeed = ({ items, loading }) => (
   <div
